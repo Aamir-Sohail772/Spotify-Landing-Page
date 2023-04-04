@@ -1,0 +1,344 @@
+/* css code goes here */
+body {
+    margin: 0;
+    background-color: rgb(25, 20, 20);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* navbar styles */
+nav {
+    background-color: rgb(25, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+}
+
+nav li :hover {
+    color: rgb(30, 215, 96);
+
+}
+
+#download {
+    background-color: inherit;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+/* Styles for h1 */
+main h1 {
+    font-weight: 700;
+    line-height: 2;
+}
+
+/* Styles for h2 */
+main h2 {
+    font-weight: 500;
+    line-height: 3;
+}
+
+/* Styles for buttons */
+main section button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    margin-bottom: 35px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Styles for button hover */
+main section button:hover {
+    transform: scale(1.02);
+}
+
+/* Styles for button on small screens */
+@media screen and (max-width: 650px) {
+    main section button {
+        width: 100%;
+    }
+}
+
+#difference-table {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding: 20px 40px;
+}
+
+section h1 {
+    font-weight: 700;
+    padding: 0px 50px;
+}
+
+section table {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 45px;
+}
+
+section table tr th {
+    font-weight: 300;
+}
+
+section table tr td {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+section table tr td .fa-circle-check {
+    color: rgb(30, 215, 96);
+    font-size: 30px;
+}
+
+section table tr td .fa-circle-xmark {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+section section button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+}
+
+section section button:hover {
+    cursor: pointer;
+}
+
+#premium {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+section h2 {
+    margin: 0;
+}
+
+/*
+  section article  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 100px;
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 650px) {
+      section article {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 20px;
+     }
+  }
+  */
+
+.price-cards {
+    /* styles for the parent element of the articles */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 100px;
+    text-align: left;
+}
+
+@media screen and (max-width: 650px) {
+    .price-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+}
+
+.price-cards {
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 5px rgb(170, 170, 170);
+    padding: 20px;
+}
+
+.card-header {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.card-header span {
+    display: inline-block;
+    font-size: 0.75rem;
+    background-color: rgb(13, 114, 234);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.card-header h3 {
+    margin-bottom: 0;
+}
+
+.card-header p {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.card-body li {
+    font-weight: 500;
+}
+
+.price-cards button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: inherit;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.price-cards button:hover {
+    transform: scale(1.02);
+}
+
+/* Selecting the section with id "students-offer" */
+#students-offer {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Selecting the buttons within the section */
+  #students-offer button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(25, 20, 20);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-family: inherit;
+  }
+  
+  /* On hover, the button size should increase to 1.02 */
+  #students-offer button:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Selecting the form */
+  form {
+    margin-top: 20px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+  }
+  
+  /* Selecting the input field with id "email" */
+  #email {
+    font-family: inherit;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  /* Selecting the input fields with ids "first-name" and "last-name" */
+  #first-name, #last-name {
+    font-family: inherit;
+    padding: 5px;
+    width: 46%;
+  }
+  
+  /* On devices with a width less than 650px, both input fields' width should increase to 100% */
+  @media screen and (max-width: 650px) {
+    #first-name, #last-name {
+      width: 100%;
+    }
+  }
+  
+  /* Selecting the select tags with ids "country" and "college-university" */
+  #country, #college-university {
+    font-family: inherit;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  /* Selecting the input field with id "contact-number" */
+  #contact-number {
+    display: block;
+    font-family: inherit;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Selecting the input field with id "consent-checkout" */
+  #consent-checkout {
+    cursor: pointer;
+  }
+  
+  /* Selecting the button within the form */
+  form button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+/* Selecting the footer tag */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Selecting the anchors tag within the footer */
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Selecting the icons */
+  footer i {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* On mouse hover, the color of icons should change to rgb(30, 215, 96) */
+  footer i:hover {
+    color: rgb(30, 215, 96);
+  }
+    
