@@ -134,7 +134,7 @@ section section button:hover {
     cursor: pointer;
 }
 
-#premium {
+/* #premium {
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
@@ -142,7 +142,7 @@ section section button:hover {
 
 section h2 {
     margin: 0;
-}
+} */
 
 /*
   section article  {
@@ -163,8 +163,8 @@ section h2 {
   }
   */
 
-.price-cards {
-    /* styles for the parent element of the articles */
+/* .price-cards {
+    styles for the parent element of the articles
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -230,8 +230,97 @@ section h2 {
 
 .price-cards button:hover {
     transform: scale(1.02);
-}
+} */
 
+/*  */
+
+
+#premium {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section section h2 {
+    margin: 0;
+  }
+  
+  section .price-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 100px;
+    text-align: left;
+  }
+  
+  @media (max-width: 650px) {
+    section .price-cards {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, auto);
+      padding: 20px;
+    }
+  }
+  
+  .price-cards article {
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 5px rgb(170, 170, 170);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+   .card-header {
+    border-bottom: 1px solid rgb(170, 170, 170);
+  }
+  
+  .card-header span {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    background-color: rgb(13, 114, 234);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+  
+  /* Select the h3 within the card header, and remove its bottom margin */
+  .price-cards .card-header h3 {
+    margin-bottom: 0;
+  }
+  
+  /* Select the p tags within the card header, remove its bottom margin as well, and make the font weight of value 300 */
+  .price-cards .card-header p {
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  
+  /* Select the list items within the card body, and make their font-weight of value 500 */
+  .price-cards .card-body ol li {
+    font-weight: 500;
+  }
+  
+  /* Select the buttons of the price cards and add the following styles */
+  .price-cards .card-body button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 100%;
+  }
+  
+  /* On hover, buttons' size should scale to 1.02 */
+  .price-cards .card-body button:hover {
+    transform: scale(1.02);
+  }
+  
+/*  */
 /* Selecting the section with id "students-offer" */
 #students-offer {
     background-color: rgb(255, 255, 255);
